@@ -28,7 +28,7 @@ def run():
     with tabs[1]:
         dl_tabs = st.columns((1,2))
         with dl_tabs[0]:
-            with st.expander('Download Temaple'):
+            with st.expander('Download Template'):
                 sample = pd.read_csv('sample.csv')
                 sample = sample.to_csv().encode('utf-8')
                 st.download_button(
